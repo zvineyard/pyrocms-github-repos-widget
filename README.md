@@ -2,7 +2,7 @@
 
 ## Description
 
-Display a list of your GitHub repositories.
+Display a list of your public GitHub repositories.
 
 ## Usage
 

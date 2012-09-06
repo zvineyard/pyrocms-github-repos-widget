@@ -39,10 +39,10 @@ class Widget_Github_repos extends Widgets
         $url = "https://api.github.com/users/".$user."/repos?sort=updated";
 
         // Check cache
-        if (!$data = $this->pyrocache->get('github_repos/'.md5($url)))
+        if (!$data = $this->pyrocache->get('github_repos_widget'))
         { 
             $data = file_get_contents($url);
-            $this->pyrocache->write($data, 'github_repos/'.md5($url), 43200); // Expires every 12 hours
+            $this->pyrocache->write($data, 'github_repos_widget', 43200); // Expires every 12 hours
         }
 
         // Check cache
