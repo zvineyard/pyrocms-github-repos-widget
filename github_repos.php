@@ -26,7 +26,7 @@ class Widget_Github_repos extends Widgets
         array(
             'field'   => 'github_user_id',
             'label'   => 'GitHub User ID',
-            'rules'   => 'required'
+            'rules'   => 'required|trim|integer'
         )
     );
 
